@@ -1,0 +1,53 @@
+{
+	"schemaVersion": 1,
+	"id": "mavity_lib",
+	"version": "${version}",
+	"name": "Mavity Lib",
+	"description": "So I don't have to keep setting up everything for my mods.",
+	"authors": [
+		"Mavity The Madity"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "",
+	"icon": "assets/mavity_lib/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"wiiu.mavity.mavity_lib.MavityLib"
+		],
+		"client": [
+			"wiiu.mavity.mavity_lib.MavityLibClient"
+		],
+		"fabric-datagen": [
+			"wiiu.mavity.mavity_lib.MavityLibDataGenerator"
+		],
+		"main-menu-credits": [
+			"wiiu.mavity.mavity_lib.credits.MavityLibMenuCredits"
+		]
+	},
+	"mixins": [
+		"mavity_lib.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"trinkets": "*",
+		"pehkui": "*",
+		"modmenu": "*",
+		"midnightlib": "*",
+		"porting_lib_core": "*",
+		"porting_lib_model_loader": "*",
+		"porting_lib_obj_loader": "*",
+		"isxander-main-menu-credits": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"badges": [ "library" ]
+		}
+	}
+}

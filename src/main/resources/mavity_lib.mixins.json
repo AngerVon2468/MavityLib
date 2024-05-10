@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "wiiu.mavity.mavity_lib.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"DamageMixin",
+		"ExampleMixin",
+		"UnbreakingMixin"
+
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
