@@ -8,6 +8,7 @@ import wiiu.mavity.mavity_lib.block.BlockRegistry;
 import wiiu.mavity.mavity_lib.config.MavityLibConfig;
 import wiiu.mavity.mavity_lib.credits.MavityLibMenuCredits;
 import wiiu.mavity.mavity_lib.item.ItemRegistry;
+import wiiu.mavity.mavity_lib.property.PropertyInit;
 import wiiu.mavity.mavity_lib.tags.TagInit;
 
 import org.slf4j.*;
@@ -29,6 +30,7 @@ public class MavityLib implements ModInitializer {
 		ItemRegistry.registerMavityLibItemRegistry();
 		BlockRegistry.registerMavityLibBlocks();
 		TagInit.registerTagInit();
+		PropertyInit.registerPropertyInit();
 
 		// Config
 		MidnightConfig.init(MavityLib.MOD_ID, MavityLibConfig.class);
