@@ -5,6 +5,7 @@ import net.minecraft.registry.*;
 import net.minecraft.util.Identifier;
 
 import wiiu.mavity.mavity_lib.MavityLib;
+import wiiu.mavity.mavity_lib.property.PropertyInit;
 
 /**
  * Registry class to be called on by other mods from me. <br>
@@ -13,7 +14,7 @@ import wiiu.mavity.mavity_lib.MavityLib;
  * <strong>
  *     public static final Item WiiU = ItemRegistry.registerItem("example_mod_id", "wiiu", <br>
  *     <p style="margin-left: 35px">
- *         new Item(new FabricItemSettings()));
+ *         new Item(PropertyInit.GTOI));
  *     </p>
  * </strong> <br>
  * Replace "example_mod_id" with your modid, or use the modid you define in your main class <br>
