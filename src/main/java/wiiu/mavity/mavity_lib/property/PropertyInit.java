@@ -8,6 +8,6 @@ public class PropertyInit {
     public static FabricItemSettings GT = new FabricItemSettings().maxCount(64);
     public static FabricItemSettings GTOI = new FabricItemSettings().maxDamage(0);
     public static void registerPropertyInit() {
-        MavityLib.LOGGER.info(MavityLib.MOD_ID + " has registered its' properties.");
+        MavityLib.LOGGER.info(MavityLib.NAME + " has registered its' properties.");
     }
 }
