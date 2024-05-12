@@ -43,6 +43,7 @@ public class MavityLib implements ModInitializer {
 
 		// Commands
 		CommandInit.wiiuCommand();
+		MavityLib.LOGGER.info(MavityLib.NAME + " has registered its commands.");
 
 		// Operating System Utils
 		MavityLib.LOGGER.info(MavityLib.NAME + " has started up on " + System.getProperty("os.name"));
