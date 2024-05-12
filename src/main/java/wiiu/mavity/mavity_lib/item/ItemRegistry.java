@@ -14,7 +14,7 @@ import wiiu.mavity.mavity_lib.property.PropertyInit;
  * <strong>
  *     public static final Item WiiU = ItemRegistry.registerItem("example_mod_id", "wiiu", <br>
  *     <p style="margin-left: 35px">
- *         new Item(PropertyInit.GTOI));
+ *         new Item(PropertyInit.GTOIU));
  *     </p>
  * </strong> <br>
  * Replace "example_mod_id" with your modid, or use the modid you define in your main class <br>
