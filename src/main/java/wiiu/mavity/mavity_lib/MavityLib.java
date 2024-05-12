@@ -46,14 +46,16 @@ public class MavityLib implements ModInitializer {
 		MavityLib.LOGGER.info(MavityLib.NAME + " has registered its commands.");
 
 		// Operating System Utils
-		MavityLib.LOGGER.info(MavityLib.NAME + " has started up on " + System.getProperty("os.name"));
-		if (OSInfo.get() == WINDOWS) {
+		if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+			MavityLib.LOGGER.info(MavityLib.NAME + " has started up on " + System.getProperty("os.name"));
+		}
+		if (OSInfo.get() == WINDOWS && FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
 			MavityLib.LOGGER.info("Please check that the logger message above this says Windows.");
 		}
-		if (OSInfo.get() == LINUX) {
+		if (OSInfo.get() == LINUX && FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
 			MavityLib.LOGGER.info("Please check that the logger message above this says Linux.");
 		}
-		if (OSInfo.get() == MAC) {
+		if (OSInfo.get() == MAC && FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
 			MavityLib.LOGGER.info("Please check that the logger message above this says Mac.");
 		}
 

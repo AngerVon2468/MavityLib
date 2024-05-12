@@ -13,9 +13,14 @@ import org.lwjgl.glfw.GLFW;
 import wiiu.mavity.mavity_lib.MavityLib;
 
 public class KeyBindInit {
+
+    // Categories (Translation keys)
     public static final String CATEGORY_MAVITY_LIB = "key.category.mavity_lib.mavity_lib";
+
+    // Keybinds (Translation keys)
     public static final String DEBUG = "key.mavity_lib.debug";
 
+    // Keybinds
     public static KeyBinding debugKey;
 
     public static void registerKeyInputs() {
