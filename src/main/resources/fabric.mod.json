@@ -9,6 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/mod/mavity-lib",
+		"issues": "https://github.com/AngerVon2468/MavityLib/issues",
 		"sources": "https://github.com/AngerVon2468/MavityLib"
 	},
 	"license": "",
