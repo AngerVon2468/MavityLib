@@ -8,8 +8,8 @@
 		"Mavity The Madity"
 	],
 	"contact": {
-		"homepage": "",
-		"sources": ""
+		"homepage": "https://modrinth.com/mod/mavity-lib",
+		"sources": "https://github.com/AngerVon2468/MavityLib"
 	},
 	"license": "",
 	"icon": "assets/mavity_lib/icon.png",
@@ -20,6 +20,9 @@
 		],
 		"client": [
 			"wiiu.mavity.mavity_lib.MavityLibClient"
+		],
+		"server": [
+			"wiiu.mavity.mavity_lib.MavityLibServer"
 		],
 		"fabric-datagen": [
 			"wiiu.mavity.mavity_lib.MavityLibDataGenerator"

@@ -69,9 +69,6 @@ dependencies {
 
 	// Porting Lib
 	modImplementation "io.github.fabricators_of_create.Porting-Lib:${project.porting_lib_module}:${project.porting_lib_version}"
-
-	// Just to make sure the cursemaven is still up.
-	modImplementation "curse.maven:mavity_lib-1016352:${project.mavity_lib_version}"
 }
 
 processResources {

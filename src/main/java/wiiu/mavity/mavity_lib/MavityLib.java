@@ -3,6 +3,9 @@ package wiiu.mavity.mavity_lib;
 import eu.midnightdust.lib.config.MidnightConfig;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
+
+import net.minecraft.client.MinecraftClient;
 
 import wiiu.mavity.mavity_lib.block.BlockRegistry;
 import wiiu.mavity.mavity_lib.config.MavityLibConfig;
@@ -34,6 +37,7 @@ public class MavityLib implements ModInitializer {
 		BlockRegistry.registerMavityLibBlocks();
 		TagInit.registerTagInit();
 		PropertyInit.registerPropertyInit();
+
 		// Operating System Utils
 		MavityLib.LOGGER.info(MavityLib.NAME + " has started up on " + System.getProperty("os.name"));
 		if (OSInfo.get() == WINDOWS) {
@@ -44,6 +48,21 @@ public class MavityLib implements ModInitializer {
 		}
 		if (OSInfo.get() == MAC) {
 			MavityLib.LOGGER.info("Please check that the logger message above this says Mac.");
+		}
+
+		// Anti-Optifine Utils.
+		if (FabricLoader.getInstance().isModLoaded("optifabric")) {
+			MinecraftClient.getInstance().close();
+		}
+		if (FabricLoader.getInstance().isModLoaded("optifine")) {
+			MinecraftClient.getInstance().close();
+		}
+
+		// Development Environment Utils
+		if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+			MavityLib.LOGGER.info(MavityLib.NAME + " has started up in a development environment.");
+		} else if (FabricLoader.getInstance().isDevelopmentEnvironment() == false) {
+			MavityLib.LOGGER.info(MavityLib.NAME + " has started up in a non-development environment.");
 		}
 
 		// Config

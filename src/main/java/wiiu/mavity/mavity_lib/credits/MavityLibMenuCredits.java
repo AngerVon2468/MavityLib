@@ -17,6 +17,21 @@ public class MavityLibMenuCredits implements MainMenuCreditAPI {
         return Lists.newArrayList(Text.translatable("titlescreen.mavity_lib.bottom_left"));
     }
 
+    @Override
+    public List<Text> getTitleScreenBottomRight() {
+        return Lists.newArrayList(Text.translatable("titlescreen.mavity_lib.bottom_right"));
+    }
+
+    @Override
+    public List<Text> getTitleScreenTopLeft() {
+        return Lists.newArrayList(Text.translatable("titlescreen.mavity_lib.top_left"));
+    }
+
+    @Override
+    public List<Text> getTitleScreenTopRight() {
+        return Lists.newArrayList(Text.translatable("titlescreen.mavity_lib.top_right"));
+    }
+
     public static void registerMavityLibMenuCredits() {
         MavityLib.LOGGER.info(MavityLib.NAME + " has registered its main menu credits class.");
     }
