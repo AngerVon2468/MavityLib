@@ -8,9 +8,11 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.MinecraftClient;
 
 import wiiu.mavity.mavity_lib.block.BlockRegistry;
+import wiiu.mavity.mavity_lib.command.CommandInit;
 import wiiu.mavity.mavity_lib.config.MavityLibConfig;
 import wiiu.mavity.mavity_lib.credits.MavityLibMenuCredits;
 import wiiu.mavity.mavity_lib.item.ItemRegistry;
+import wiiu.mavity.mavity_lib.keybind.KeyBindInit;
 import wiiu.mavity.mavity_lib.property.PropertyInit;
 import wiiu.mavity.mavity_lib.tags.TagInit;
 import wiiu.mavity.mavity_lib.util.OSInfo;
@@ -37,6 +39,10 @@ public class MavityLib implements ModInitializer {
 		BlockRegistry.registerMavityLibBlocks();
 		TagInit.registerTagInit();
 		PropertyInit.registerPropertyInit();
+		KeyBindInit.registerKeyBindInit();
+
+		// Commands
+		CommandInit.wiiuCommand();
 
 		// Operating System Utils
 		MavityLib.LOGGER.info(MavityLib.NAME + " has started up on " + System.getProperty("os.name"));

@@ -1,15 +1,15 @@
 {
   "titlescreen.mavity_lib.bottom_left": "",
-
   "titlescreen.mavity_lib.bottom_right": "",
-
   "titlescreen.mavity_lib.top_left": "",
-
   "titlescreen.mavity_lib.top_right": "",
 
   "mavity_lib.midnightconfig.title": "Mavity Lib Settings",
 
   "mavity_lib.midnightconfig.comment_1": "Mavity Lib Configurations",
 
-  "mavity_lib.midnightconfig.showTooltips": "Show Item Tooltips"
+  "mavity_lib.midnightconfig.showTooltips": "Show Item Tooltips",
+
+  "key.category.mavity_lib.mavity_lib": "Mavity Lib Keybinds",
+  "key.mavity_lib.debug": "Debug"
 }
