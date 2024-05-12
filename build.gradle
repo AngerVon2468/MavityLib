@@ -69,6 +69,8 @@ dependencies {
 
 	// Porting Lib
 	modImplementation "io.github.fabricators_of_create.Porting-Lib:${project.porting_lib_module}:${project.porting_lib_version}"
+
+	modImplementation "curse.maven:modmenu-badges-lib-914586:4758379"
 }
 
 processResources {

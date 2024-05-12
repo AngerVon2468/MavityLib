@@ -12,8 +12,8 @@
 		"issues": "https://github.com/AngerVon2468/MavityLib/issues",
 		"sources": "https://github.com/AngerVon2468/MavityLib"
 	},
-	"license": "",
-	"icon": "assets/mavity_lib/icon.png",
+	"license": "ARR",
+	"icon": "assets/mavity_lib/main.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -49,9 +49,20 @@
 		"porting_lib_obj_loader": "*",
 		"isxander-main-menu-credits": "*"
 	},
+	"recommends": {
+		"modmenu-badges-lib": "*"
+	},
 	"custom": {
 		"modmenu": {
-			"badges": [ "library" ]
-		}
+			"update_checker": true
+		},
+		"mcb": [
+			{
+				"name": "API/Library",
+				"labelColor": -1842205,
+				"fillColor": -16751703,
+				"outlineColor": -16741121
+			}
+		]
 	}
 }
