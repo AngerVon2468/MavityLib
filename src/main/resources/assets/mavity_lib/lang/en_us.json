@@ -9,6 +9,11 @@
   "mavity_lib.midnightconfig.comment_1": "Mavity Lib Config",
 
   "mavity_lib.midnightconfig.showTooltips": "Show Item Tooltips",
+  "mavity_lib.midnightconfig.WiiU": "WiiU",
+
+  "mavity_lib.midnightconfig.wiiu": "WiiU",
+  "mavity_lib.midnightconfig.enum.WiiU.WiiU": "WiiU",
+  "mavity_lib.midnightconfig.enum.WiiU.UWii": "UWii",
 
   "key.category.mavity_lib.mavity_lib": "Mavity Lib Keybinds",
   "key.mavity_lib.debug": "Debug"

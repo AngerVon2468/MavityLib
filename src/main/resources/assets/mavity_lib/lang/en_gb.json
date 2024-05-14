@@ -9,6 +9,11 @@
   "mavity_lib.midnightconfig.comment_1": "Mavity Lib Configurations",
 
   "mavity_lib.midnightconfig.showTooltips": "Show Item Descriptions",
+  "mavity_lib.midnightconfig.WiiU": "§lWii§r§b§lU",
+
+  "mavity_lib.midnightconfig.wiiu": "§lWii§r§b§lU",
+  "mavity_lib.midnightconfig.enum.WiiU.WiiU": "§lWii§r§b§lU",
+  "mavity_lib.midnightconfig.enum.WiiU.UWii": "§b§lU§r§lWii",
 
   "key.category.mavity_lib.mavity_lib": "Mavity Library Keybindings",
   "key.mavity_lib.debug": "Debug Keybind"

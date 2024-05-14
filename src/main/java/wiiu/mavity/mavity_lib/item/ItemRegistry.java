@@ -28,7 +28,7 @@ public class ItemRegistry {
 
     // Register items in other mods ItemInits using the registerItem method from here.
 
-    public static void registerMavityLibItemRegistry() {
+    public static void registerItemRegistry() {
         MavityLib.LOGGER.info(MavityLib.NAME + " has registered its item registry.");
     }
 }

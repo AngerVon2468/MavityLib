@@ -35,8 +35,8 @@ public class MavityLib implements ModInitializer {
 		// Initializing classes
 		MavityLib.LOGGER.info(MavityLib.NAME + " has registered its main class.");
 		MavityLibMenuCredits.registerMavityLibMenuCredits();
-		ItemRegistry.registerMavityLibItemRegistry();
-		BlockRegistry.registerMavityLibBlocks();
+		ItemRegistry.registerItemRegistry();
+		BlockRegistry.registerBlockRegistry();
 		TagInit.registerTagInit();
 		PropertyInit.registerPropertyInit();
 		KeyBindInit.registerKeyBindInit();

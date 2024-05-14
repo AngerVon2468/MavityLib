@@ -36,7 +36,7 @@ public class BlockRegistry {
 
     // Register items in other mods BlockInits using the registerBlock method from here.
 
-    public static void registerMavityLibBlocks() {
+    public static void registerBlockRegistry() {
         MavityLib.LOGGER.info(MavityLib.NAME + " has registered its block registry.");
     }
 }
