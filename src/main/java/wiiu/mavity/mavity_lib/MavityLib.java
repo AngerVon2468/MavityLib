@@ -37,7 +37,9 @@ public class MavityLib implements ModInitializer {
 	public void onInitialize() {
 
 		// Initializing classes
-		MavityLib.LOGGER.info(MavityLib.NAME + " has registered its main class.");
+		if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+			MavityLib.LOGGER.info(MavityLib.NAME + " has registered its main class.");
+		}
 		MavityLibMenuCredits.registerMavityLibMenuCredits();
 		ItemRegistry.registerItemRegistry();
 		BlockRegistry.registerBlockRegistry();
@@ -49,7 +51,9 @@ public class MavityLib implements ModInitializer {
 
 		// Commands
 		CommandInit.wiiuCommand();
-		MavityLib.LOGGER.info(MavityLib.NAME + " has registered its commands.");
+		if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+			MavityLib.LOGGER.info(MavityLib.NAME + " has registered its commands.");
+		}
 
 		// Operating System Utils
 		if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {

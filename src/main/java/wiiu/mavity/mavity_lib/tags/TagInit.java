@@ -1,5 +1,7 @@
 package wiiu.mavity.mavity_lib.tags;
 
+import net.fabricmc.loader.api.FabricLoader;
+
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
@@ -16,6 +18,8 @@ public class TagInit {
     public static final TagKey<Item> ENCHANT_ARMOUR = TagKey.of(RegistryKeys.ITEM, new Identifier(MavityLib.MOD_ID, "enchant_armour"));
 
     public static void registerTagInit() {
-        MavityLib.LOGGER.info(MavityLib.NAME + " has registered its item tags.");
+        if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+            MavityLib.LOGGER.info(MavityLib.NAME + " has registered its item tags.");
+        }
     }
 }

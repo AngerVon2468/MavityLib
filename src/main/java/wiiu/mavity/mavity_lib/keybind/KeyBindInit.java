@@ -42,6 +42,8 @@ public class KeyBindInit {
                 CATEGORY_MAVITY_LIB
         ));
         registerKeyInputs();
-        MavityLib.LOGGER.info(MavityLib.NAME + " has registered its keybinds.");
+        if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+            MavityLib.LOGGER.info(MavityLib.NAME + " has registered its keybinds.");
+        }
     }
 }

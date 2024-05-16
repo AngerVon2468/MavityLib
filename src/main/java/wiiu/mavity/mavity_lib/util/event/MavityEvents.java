@@ -3,6 +3,7 @@ package wiiu.mavity.mavity_lib.util.event;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.entity.event.v1.EntitySleepEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.*;
+import net.fabricmc.loader.api.FabricLoader;
 
 import wiiu.mavity.mavity_lib.MavityLib;
 
@@ -37,6 +38,8 @@ public class MavityEvents {
         serverTickEvent();
         loadServerEvent();
         stopSleepingEvent();
-        MavityLib.LOGGER.info(MavityLib.NAME + " has registered its events. (WHAT!? ON FABRIC!?)");
+        if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+            MavityLib.LOGGER.info(MavityLib.NAME + " has registered its events. (WHAT!? ON FABRIC!?)");
+        }
     }
 }

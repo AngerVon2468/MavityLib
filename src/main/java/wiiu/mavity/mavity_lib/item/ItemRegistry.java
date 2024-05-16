@@ -1,5 +1,7 @@
 package wiiu.mavity.mavity_lib.item;
 
+import net.fabricmc.loader.api.FabricLoader;
+
 import net.minecraft.item.Item;
 import net.minecraft.registry.*;
 import net.minecraft.util.Identifier;
@@ -29,6 +31,8 @@ public class ItemRegistry {
     // Register items in other mods ItemInits using the registerItem method from here.
 
     public static void registerItemRegistry() {
-        MavityLib.LOGGER.info(MavityLib.NAME + " has registered its item registry.");
+        if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+            MavityLib.LOGGER.info(MavityLib.NAME + " has registered its item registry.");
+        }
     }
 }

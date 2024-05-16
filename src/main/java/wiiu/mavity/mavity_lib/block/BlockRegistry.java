@@ -1,6 +1,7 @@
 package wiiu.mavity.mavity_lib.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.loader.api.FabricLoader;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
@@ -37,6 +38,8 @@ public class BlockRegistry {
     // Register items in other mods BlockInits using the registerBlock method from here.
 
     public static void registerBlockRegistry() {
-        MavityLib.LOGGER.info(MavityLib.NAME + " has registered its block registry.");
+        if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+            MavityLib.LOGGER.info(MavityLib.NAME + " has registered its block registry.");
+        }
     }
 }

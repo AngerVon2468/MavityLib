@@ -1,6 +1,7 @@
 package wiiu.mavity.mavity_lib.property;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.loader.api.FabricLoader;
 
 import wiiu.mavity.mavity_lib.MavityLib;
 
@@ -13,6 +14,8 @@ public class PropertyInit {
     public static FabricItemSettings GTOIU = new FabricItemSettings().maxDamage(0).maxCount(1);
 
     public static void registerPropertyInit() {
-        MavityLib.LOGGER.info(MavityLib.NAME + " has registered its properties.");
+        if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+            MavityLib.LOGGER.info(MavityLib.NAME + " has registered its properties.");
+        }
     }
 }
