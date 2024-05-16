@@ -6,10 +6,13 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.util.Identifier;
 
 import wiiu.mavity.mavity_lib.block.BlockRegistry;
 import wiiu.mavity.mavity_lib.command.CommandInit;
+import wiiu.mavity.mavity_lib.cosmeticstuff.Credits;
 import wiiu.mavity.mavity_lib.config.MavityLibConfig;
+import wiiu.mavity.mavity_lib.cosmeticstuff.util.CosmeticUtil;
 import wiiu.mavity.mavity_lib.credits.MavityLibMenuCredits;
 import wiiu.mavity.mavity_lib.item.ItemRegistry;
 import wiiu.mavity.mavity_lib.keybind.KeyBindInit;
@@ -42,6 +45,7 @@ public class MavityLib implements ModInitializer {
 		PropertyInit.registerPropertyInit();
 		KeyBindInit.registerKeyBindInit();
 		MavityEvents.registerMavityEvents();
+		Credits.credit_person_mlodziak00();
 
 		// Commands
 		CommandInit.wiiuCommand();
@@ -78,5 +82,12 @@ public class MavityLib implements ModInitializer {
 
 		// Config
 		MidnightConfig.init(MavityLib.MOD_ID, MavityLibConfig.class);
+
+		// Erm what the sigma
+		CosmeticUtil.REGISTERMEINMAINNNNNN();
+	}
+
+	public static Identifier id(String name){
+		return new Identifier(MOD_ID, name);
 	}
 }
