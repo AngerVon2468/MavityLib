@@ -5,8 +5,8 @@
 	"mixins": [
 		"DamageMixin",
 		"ExampleMixin",
+		"PlayerEntityRendererMixin",
 		"UnbreakingMixin"
-
 	],
 	"injectors": {
 		"defaultRequire": 1
