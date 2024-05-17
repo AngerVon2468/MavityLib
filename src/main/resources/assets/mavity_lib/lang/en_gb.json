@@ -15,6 +15,8 @@
   "mavity_lib.midnightconfig.enum.WiiU.WiiU": "§lWii§r§b§lU",
   "mavity_lib.midnightconfig.enum.WiiU.UWii": "§b§lU§r§lWii",
 
+  "mavity_lib.midnightconfig.trollMavity": "Troll Mavity",
+
   "key.category.mavity_lib.mavity_lib": "Mavity Library Keybindings",
   "key.mavity_lib.debug": "Debug Keybind"
 }

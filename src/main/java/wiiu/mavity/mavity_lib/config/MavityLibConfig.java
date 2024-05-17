@@ -13,4 +13,6 @@ public class MavityLibConfig extends MidnightConfig {
         WiiU,
         UWii;
     }
+
+    @Entry(category = "settings") public static String trollMavity = "words";
 }
