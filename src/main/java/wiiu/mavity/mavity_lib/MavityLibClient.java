@@ -3,8 +3,6 @@ package wiiu.mavity.mavity_lib;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 
-import wiiu.mavity.mavity_lib.cosmeticstuff.util.CosmeticUtil;
-
 public class MavityLibClient implements ClientModInitializer {
 
     @Override
@@ -12,6 +10,5 @@ public class MavityLibClient implements ClientModInitializer {
         if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
             MavityLib.LOGGER.info(MavityLib.NAME + " has registered its main client class.");
         }
-        CosmeticUtil.REGISTERMEEEEEEEEEEEEEEEE();
     }
 }

@@ -5,7 +5,6 @@
 	"mixins": [
 		"DamageMixin",
 		"ExampleMixin",
-		"PlayerEntityRendererMixin",
 		"UnbreakingMixin"
 	],
 	"injectors": {
