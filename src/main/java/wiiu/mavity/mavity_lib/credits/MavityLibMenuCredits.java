@@ -4,6 +4,7 @@ import com.google.common.collect.Lists;
 
 import dev.isxander.mainmenucredits.api.MainMenuCreditAPI;
 
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.text.Text;
 
 import wiiu.mavity.mavity_lib.MavityLib;
@@ -33,6 +34,8 @@ public class MavityLibMenuCredits implements MainMenuCreditAPI {
     }
 
     public static void registerMavityLibMenuCredits() {
-        MavityLib.LOGGER.info(MavityLib.NAME + " has registered its main menu credits class.");
+        if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+            MavityLib.LOGGER.info(MavityLib.NAME + " has registered its main menu credits class.");
+        }
     }
 }

@@ -7,7 +7,6 @@ import net.minecraft.registry.*;
 import net.minecraft.util.Identifier;
 
 import wiiu.mavity.mavity_lib.MavityLib;
-import wiiu.mavity.mavity_lib.property.PropertyInit;
 
 /**
  * Registry class to be called on by other mods from me. <br>
