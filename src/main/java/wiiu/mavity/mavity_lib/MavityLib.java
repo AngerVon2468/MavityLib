@@ -30,6 +30,8 @@ public class MavityLib implements ModInitializer {
 
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 
+	public static final String NOTE = "Main Menu Credits translations are removed from Mavity Lib so mods that use it can override them without lang file issues.";
+
 	@Override
 	public void onInitialize() {
 
