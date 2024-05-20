@@ -84,5 +84,7 @@ public class MavityLib implements ModInitializer {
 
 		// Config
 		MidnightConfig.init(MavityLib.MOD_ID, MavityLibConfig.class);
+
+		MavityLibButInKotlin.Companion.registerMavityLibButInKotlin();
 	}
 }
