@@ -17,28 +17,28 @@ class EventCallbacks {
         @JvmStatic
         fun clientTickEvent() {
             ClientTickEvents.END_CLIENT_TICK.register { client ->
-
+                // WiiU
             }
         }
 
         @JvmStatic
         fun serverTickEvent() {
             ServerTickEvents.END_SERVER_TICK.register { server ->
-
+                // WiiU
             }
         }
 
         @JvmStatic
         fun loadServerEvent() {
             ServerWorldEvents.LOAD.register { server, world ->
-
+                // WiiU
             }
         }
 
         @JvmStatic
         fun stopSleepingEvent() {
-            EntitySleepEvents.STOP_SLEEPING.register{ entity, sleepingPos ->
-
+            EntitySleepEvents.STOP_SLEEPING.register { entity, sleepingPos ->
+                // WiiU
             }
         }
 
