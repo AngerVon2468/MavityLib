@@ -16,7 +16,6 @@ import wiiu.mavity.mavity_lib.keybind.KeyBindInit;
 import wiiu.mavity.mavity_lib.property.PropertyInit;
 import wiiu.mavity.mavity_lib.tags.TagInit;
 import wiiu.mavity.mavity_lib.util.OSInfo;
-import wiiu.mavity.mavity_lib.util.event.MavityEvents;
 
 import org.slf4j.*;
 
@@ -45,7 +44,6 @@ public class MavityLib implements ModInitializer {
 		TagInit.registerTagInit();
 		PropertyInit.registerPropertyInit();
 		KeyBindInit.registerKeyBindInit();
-		MavityEvents.registerMavityEvents();
 
 		// Commands
 		CommandInit.wiiuCommand();
@@ -85,6 +83,7 @@ public class MavityLib implements ModInitializer {
 		// Config
 		MidnightConfig.init(MavityLib.MOD_ID, MavityLibConfig.class);
 
-		MavityLibButInKotlin.Companion.registerMavityLibButInKotlin();
+		// Kotlin
+		MavityLibButInKotlin.registerMavityLibButInKotlin();
 	}
 }
