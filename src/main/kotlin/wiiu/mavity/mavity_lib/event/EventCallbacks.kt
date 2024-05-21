@@ -59,7 +59,7 @@ class EventCallbacks {
             loadServerEvent()
             stopSleepingEvent()
             titleScreenLoadedEvent()
-            if (FabricLoader.getInstance().isDevelopmentEnvironment == true) {
+            if (FabricLoader.getInstance().isDevelopmentEnvironment) {
                 LOGGER.info("$NAME has registered its events. (WHAT!? ON FABRIC!?)")
             }
         }
