@@ -42,15 +42,15 @@
 		"fabric-api": "*",
 		"trinkets": "*",
 		"pehkui": "*",
-		"modmenu": "*",
-		"midnightlib": "*",
 		"porting_lib_core": "*",
 		"porting_lib_model_loader": "*",
 		"porting_lib_obj_loader": "*",
 		"isxander-main-menu-credits": "*"
 	},
 	"recommends": {
-		"modmenu-badges-lib": "*"
+		"modmenu-badges-lib": "*",
+		"modmenu": "*",
+		"midnightlib": "*"
 	},
 	"custom": {
 		"modmenu": {
