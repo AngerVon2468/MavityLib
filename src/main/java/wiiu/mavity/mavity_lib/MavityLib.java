@@ -35,7 +35,7 @@ public class MavityLib implements ModInitializer {
 	public void onInitialize() {
 
 		// Initializing classes
-		if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+		if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
 			MavityLib.LOGGER.info(MavityLib.NAME + " has registered its main class.");
 		}
 		MavityLibMenuCredits.registerMavityLibMenuCredits();
@@ -47,21 +47,21 @@ public class MavityLib implements ModInitializer {
 
 		// Commands
 		CommandInit.wiiuCommand();
-		if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+		if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
 			MavityLib.LOGGER.info(MavityLib.NAME + " has registered its commands.");
 		}
 
 		// Operating System Utils
-		if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+		if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
 			MavityLib.LOGGER.info(MavityLib.NAME + " has started up on " + System.getProperty("os.name"));
 		}
-		if (OSInfo.get() == WINDOWS && FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+		if (OSInfo.get() == WINDOWS && FabricLoader.getInstance().isDevelopmentEnvironment()) {
 			MavityLib.LOGGER.info("Please check that the logger message above this says Windows.");
 		}
-		if (OSInfo.get() == LINUX && FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+		if (OSInfo.get() == LINUX && FabricLoader.getInstance().isDevelopmentEnvironment()) {
 			MavityLib.LOGGER.info("Please check that the logger message above this says Linux.");
 		}
-		if (OSInfo.get() == MAC && FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+		if (OSInfo.get() == MAC && FabricLoader.getInstance().isDevelopmentEnvironment()) {
 			MavityLib.LOGGER.info("Please check that the logger message above this says Mac.");
 		}
 
@@ -74,9 +74,9 @@ public class MavityLib implements ModInitializer {
 		}
 
 		// Development Environment Utils
-		if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+		if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
 			MavityLib.LOGGER.info(MavityLib.NAME + " has started up in a development environment.");
-		} else if (FabricLoader.getInstance().isDevelopmentEnvironment() == false) {
+		} else if (!FabricLoader.getInstance().isDevelopmentEnvironment()) {
 			MavityLib.LOGGER.info(MavityLib.NAME + " has started up in a non-development environment.");
 		}
 

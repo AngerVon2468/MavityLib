@@ -38,7 +38,7 @@ public class BlockRegistry {
     // Register items in other mods BlockInits using the registerBlock method from here.
 
     public static void registerBlockRegistry() {
-        if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+        if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
             MavityLib.LOGGER.info(MavityLib.NAME + " has registered its block registry.");
         }
     }

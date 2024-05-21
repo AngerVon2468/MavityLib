@@ -7,7 +7,7 @@ public class MavityLibClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+        if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
             MavityLib.LOGGER.info(MavityLib.NAME + " has registered its main client class.");
         }
     }

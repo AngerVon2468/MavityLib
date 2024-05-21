@@ -26,7 +26,7 @@ public class KeyBindInit {
     public static void registerKeyInputs() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if(debugKey.wasPressed()) {
-                if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+                if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
                     assert client.player != null;
                     client.player.sendMessage(Text.literal("Debug keybind pressed by " + client.player.getEntityName()));
                 }
@@ -42,7 +42,7 @@ public class KeyBindInit {
                 CATEGORY_MAVITY_LIB
         ));
         registerKeyInputs();
-        if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+        if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
             MavityLib.LOGGER.info(MavityLib.NAME + " has registered its keybinds.");
         }
     }

@@ -30,7 +30,7 @@ public class ItemRegistry {
     // Register items in other mods ItemInits using the registerItem method from here.
 
     public static void registerItemRegistry() {
-        if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+        if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
             MavityLib.LOGGER.info(MavityLib.NAME + " has registered its item registry.");
         }
     }

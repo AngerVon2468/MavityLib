@@ -11,7 +11,7 @@ public class CommandInit {
     public static void wiiuCommand() {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> dispatcher.register(literal("wiiu")
                 .executes(context -> {
-                    if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+                    if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
                         context.getSource().sendFeedback(() -> Text.literal("(" + context.getSource().getName() + "): " + "WiiU :D"), false);
                         return 1;
                     }

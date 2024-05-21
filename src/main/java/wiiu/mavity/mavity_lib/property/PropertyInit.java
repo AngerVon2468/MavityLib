@@ -14,7 +14,7 @@ public class PropertyInit {
     public static FabricItemSettings GTOIU = new FabricItemSettings().maxDamage(0).maxCount(1);
 
     public static void registerPropertyInit() {
-        if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+        if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
             MavityLib.LOGGER.info(MavityLib.NAME + " has registered its properties.");
         }
     }

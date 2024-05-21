@@ -18,7 +18,7 @@ public class TagInit {
     public static final TagKey<Item> ENCHANT_ARMOUR = TagKey.of(RegistryKeys.ITEM, new Identifier(MavityLib.MOD_ID, "enchant_armour"));
 
     public static void registerTagInit() {
-        if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+        if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
             MavityLib.LOGGER.info(MavityLib.NAME + " has registered its item tags.");
         }
     }

@@ -34,7 +34,7 @@ public class MavityLibMenuCredits implements MainMenuCreditAPI {
     }
 
     public static void registerMavityLibMenuCredits() {
-        if (FabricLoader.getInstance().isDevelopmentEnvironment() == true) {
+        if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
             MavityLib.LOGGER.info(MavityLib.NAME + " has registered its main menu credits class.");
         }
     }
