@@ -12,7 +12,6 @@ import wiiu.mavity.mavity_lib.command.CommandInit;
 import wiiu.mavity.mavity_lib.config.MavityLibConfig;
 import wiiu.mavity.mavity_lib.credits.MavityLibMenuCredits;
 import wiiu.mavity.mavity_lib.item.ItemRegistry;
-import wiiu.mavity.mavity_lib.keybind.KeyBindInit;
 import wiiu.mavity.mavity_lib.property.PropertyInit;
 import wiiu.mavity.mavity_lib.tags.TagInit;
 import wiiu.mavity.mavity_lib.util.OSInfo;
@@ -41,7 +40,6 @@ public class MavityLib implements ModInitializer {
 		BlockRegistry.registerBlockRegistry();
 		TagInit.registerTagInit();
 		PropertyInit.registerPropertyInit();
-		KeyBindInit.registerKeyBindInit();
 
 		// Commands
 		CommandInit.wiiuCommand();

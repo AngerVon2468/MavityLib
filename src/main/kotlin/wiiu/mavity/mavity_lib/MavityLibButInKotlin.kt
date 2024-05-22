@@ -11,7 +11,7 @@ class MavityLibButInKotlin {
 
         @JvmStatic
         fun registerMavityLibButInKotlin() {
-            EventCallbacks.registerEventCallBacks()
+            EventCallbacks.registerEventCallbacks()
             if(FabricLoader.getInstance().isDevelopmentEnvironment) {
                 LOGGER.info("$NAME has registered its main kotlin class.")
             }

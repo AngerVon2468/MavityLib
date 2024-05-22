@@ -53,12 +53,19 @@ class EventCallbacks {
         }
 
         @JvmStatic
-        fun registerEventCallBacks() {
+        fun registerEventCallbacksClient() {
             clientTickEvent()
+            titleScreenLoadedEvent()
+            if (FabricLoader.getInstance().isDevelopmentEnvironment) {
+                LOGGER.info("$NAME has registered its client events. (WHAT!? ON FABRIC!?)")
+            }
+        }
+
+        @JvmStatic
+        fun registerEventCallbacks() {
             serverTickEvent()
             loadServerEvent()
             stopSleepingEvent()
-            titleScreenLoadedEvent()
             if (FabricLoader.getInstance().isDevelopmentEnvironment) {
                 LOGGER.info("$NAME has registered its events. (WHAT!? ON FABRIC!?)")
             }
