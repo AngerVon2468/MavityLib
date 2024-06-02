@@ -63,10 +63,10 @@ public class MavityLib implements ModInitializer {
 
 		// Anti-Optifine Utils.
 		if (FabricLoader.getInstance().isModLoaded("optifabric")) {
-			MinecraftClient.getInstance().close();
+			throw new RuntimeException("Optifabric is bad. Please use alternatives, such as Embeddium for performance, and Iris for shaders.");
 		}
 		if (FabricLoader.getInstance().isModLoaded("optifine")) {
-			MinecraftClient.getInstance().close();
+			throw new RuntimeException("Optifine is bad. Please use alternatives, such as Embeddium for performance, and Iris for shaders.");
 		}
 
 		// Development Environment Utils
