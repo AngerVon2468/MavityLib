@@ -5,8 +5,6 @@ import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 
-import net.minecraft.client.MinecraftClient;
-
 import wiiu.mavity.mavity_lib.block.BlockRegistry;
 import wiiu.mavity.mavity_lib.command.CommandInit;
 import wiiu.mavity.mavity_lib.config.MavityLibConfig;
